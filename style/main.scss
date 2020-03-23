@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,161,1) 49%, rgba(252,176,69,1) 100%);
+}
+.container{
+    padding-top: 100px;
+   
+}
+.card {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 62%, rgba(252,176,69,1) 100%);
+    border: 0d;
+    width: 18rem;
+}
+.card__vid {
+    margin: 20 0 10 0;
+}
+.card-title {
+    text-align: center;
+}
+.body_text {
+    text-align: center;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.button__pic {
+    width: 100%;
+    margin: 3px;
+}
+.button__train {
+    width: 100%;
+    margin: 3px;
+}
+
+.button__col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

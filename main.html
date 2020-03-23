@@ -3,21 +3,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
-    <script src="webcam.js"></script>
-    <script src="rps-dataset.js"></script>
+    <script src="./utils/webcam.js"></script>
+    <script src="./utils/rps-dataset.js"></script>
+    <link rel="stylesheet" href="./style//main.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <h1 style="text-align: center;margin-bottom: 20px;text-transform: uppercase;">Face Recognition</h1>
+        
+        <div class="card" style="border: 0ch;margin: auto;">
+            <div class="card__vid">
+                <video autoplay playsinline muted id="wc" width="224" height="224" class="card-img-top"></video>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title" id="slang"></h5>
+              <div class="card-body">
+                <p class="body_text" id="body_text"></p>
+                <div class="input-group flex-nowrap">
+                    <input type="text" class="form-control" id="input_name" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                    <a href="#" class="btn btn-primary " style="margin-left: 3px;" onclick="enterName()" >Add</a>
+                  </div>
+              </div>
+              <p class="card-text"></p>
+              <div class="button">
+                  <div class="button__col">
+                    <a href="#" class="btn btn-primary button__pic"  onclick="handleButton()">Take Pic - <span id="pic_num"></span></a>
+                    <a href="#" class="btn btn-primary button__train" onclick="doTraining()" >Train</a>
+                  </div>
+              </div>
+              
+              
+              
             </div>
           </div>
     </div>
 </body>
+<script src="/utils/index_exercise.js"></script>
+<!-- <script type="module" src="/utils/nameClass.js"></script> -->
 </html>
