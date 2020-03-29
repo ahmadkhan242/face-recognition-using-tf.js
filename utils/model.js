@@ -49,7 +49,7 @@ function enterName(){
       currentName = document.getElementById("input_name").value ;
       currentLabel = IMAGENET_CLASSES.length;
       IMAGENET_CLASSES.push({[currentLabel] : document.getElementById("input_name").value}) 
-      document.getElementById("slang").innerText = "Getting you In !! Please take atleat 10 pics.";
+      document.getElementById("slang").innerText = "Getting you In !! Please take at least 10 pics.";
       document.getElementById("body_text").innerText = "";
     }
   }
